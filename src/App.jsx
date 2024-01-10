@@ -1,11 +1,12 @@
-import Gallery from "./components/Gallery"; // default import
+import Test from "./components/Test";
 
 // default import takei kora jay je default export hoy
 
 const App = () => {
   return (
     <div>
-      <Gallery />
+      {/* <Gallery /> */}
+      <Test></Test>
     </div>
   );
 };
