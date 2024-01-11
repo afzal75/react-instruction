@@ -6,6 +6,7 @@ export default function Gallery() {
     <section>
       <h1>Amazing scientists</h1>
       <Profile />
+      ggggg
       <Profile />
       <Profile />
     </section>

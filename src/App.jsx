@@ -1,22 +1,65 @@
-// import Test from "./components/Test";
+// // import Test from "./components/Test";
 
-import Avatar from "./components/Avatar";
+// import PackingList from "./components/PackingList";
 
-// // default import takei kora jay je default export hoy
+// // import Avatar from "./components/Avatar";
 
-// const App = () => {
-//   return (
-//     <div>
-//       {/* <Gallery /> */}
-//       <Test></Test>
-//     </div>
-//   );
-// };
+// // // default import takei kora jay je default export hoy
 
-// export default App;
+// // const App = () => {
+// //   return (
+// //     <div>
+// //       {/* <Gallery /> */}
+// //       <Test></Test>
+// //     </div>
+// //   );
+// // };
 
-export default function App() {
+// // export default App;
+
+// export default function App() {
+//   return <PackingList />;
+// }
+
+const people = [
+  {
+    id: 0,
+    name: "Creola Katherine Johnson",
+    profession: "mathematician",
+  },
+  {
+    id: 1,
+    name: "Mario José Molina-Pasquel Henríquez",
+    profession: "chemist",
+  },
+  {
+    id: 2,
+    name: "Mohammad Abdus Salam",
+    profession: "physicist",
+  },
+  {
+    name: "Percy Lavon Julian",
+    profession: "chemist",
+  },
+  {
+    name: "Subrahmanyan Chandrasekhar",
+    profession: "astrophysicist",
+  },
+];
+
+const App = () => {
+  // const listItems = people.map((person) => <li>{person}</li>);
+
+  const chemistss = people.filter((p) => p.profession === "chemist");
+  // console.log(chemist);
+
+  const allChemist = chemistss.map((c) => <li key={c.id}>{c.name}</li>);
+
   return (
-    <Avatar person={{ name: "Lin Lanying", imageId: "1bX5QH6" }} size={100} />
+    <div>
+      <div>{allChemist}</div>
+    </div>
   );
-}
+};
+
+export default App;
